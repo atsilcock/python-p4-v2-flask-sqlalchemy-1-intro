@@ -16,3 +16,10 @@ class Pet(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String)
     species = db.Column(db.String)
+
+class Owner(db.Model):
+    __tablename__ = 'owner'
+
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String)
+    species = db.Column(db.String)
